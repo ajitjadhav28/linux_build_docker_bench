@@ -18,7 +18,7 @@ ENV ARCH=${TARGET_ARCH}
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     git build-essential libncurses-dev bison flex libssl-dev libelf-dev bc wget ca-certificates \
-    rsync kmod cpio && \
+    rsync kmod cpio python3 python3-dev pahole && \
     rm -rf /var/lib/apt/lists/*
 
 # Clone Linux kernel source
